@@ -66,6 +66,7 @@
 			children = (
 				0D5F07112016F717001A89D4 /* FlickrAPI.swift */,
 				0D5F070F2016F372001A89D4 /* PhotosViewController.swift */,
+				0D5F07172018329C001A89D4 /* PhotoDataSource.swift */,
 				0D5F07132016FC98001A89D4 /* PhotoStore.swift */,
 				0D5F06FD2016F347001A89D4 /* AppDelegate.swift */,
 				0D5F07012016F347001A89D4 /* Main.storyboard */,
@@ -73,7 +74,6 @@
 				0D5F07062016F347001A89D4 /* LaunchScreen.storyboard */,
 				0D5F07092016F347001A89D4 /* Info.plist */,
 				0D5F071520171F84001A89D4 /* Photo.swift */,
-				0D5F07172018329C001A89D4 /* PhotoDataSource.swift */,
 				0DD656A820184EDE00F0515E /* PhotoCollectionViewCell.swift */,
 			);
 			path = Photorama;
