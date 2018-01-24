@@ -58,7 +58,7 @@ class PhotosViewController: UIViewController {
             
             collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
         ])
     }
@@ -80,5 +80,16 @@ extension PhotosViewController: UICollectionViewDelegate {
             }
             
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row)
+        print(indexPath.item)
+        
+        let infoVC = PhotoInfoViewController()
+        infoVC.photo = photoDataSource.photos[indexPath.item]
+        infoVC.store = store
+        
+        self.navigationController?.pushViewController(infoVC, animated: true)
     }
 }
